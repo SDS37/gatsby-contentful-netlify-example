@@ -1,6 +1,6 @@
 ## DESCRIPTION
 
-Gatsby framework fetching data from siteMetadata, .md files, and Contentful CMS.
+Gatsby framework fetching data from siteMetadata, .md files, and Contentful CMS using Graphql.
 
 ## TOOLS
 
