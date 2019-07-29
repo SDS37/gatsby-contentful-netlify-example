@@ -20,3 +20,7 @@ Gatsby framework fetching data from siteMetadata, .md files, and Contentful CMS 
 2. go to project's root folder
 3. npm install
 4. npm run develop
+
+## Google Audit
+
+![Google audit 29/07/2019](/static/images/29-07-19.google-audit.png)
