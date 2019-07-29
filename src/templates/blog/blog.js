@@ -6,9 +6,6 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Layout from '../../components/layout/layout'
 import Head from '../../components/head/head'
 
-// styles
-import blogStyles from './blog.module.scss'
-
 // to use with .md files
 // export const query = graphql`
 //   query ($slug: String!){
