@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby example fetching from siteMetadata, .md, and CMS',
+    title: 'Gatsby framework fetching data from siteMetadata, .md files, and CMS',
     author: 'Salvador D'
   },
   plugins: [
@@ -8,8 +8,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-contentful',
       options: {
-        spaceId: 'm08xld27krz2',
-        accessToken: 'cWF1FmtD3epWCjezlE09SEWqLSaK4yltu5mNs4cRAXI'
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
       }
     },
     'gatsby-plugin-sass',
