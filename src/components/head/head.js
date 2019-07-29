@@ -13,7 +13,7 @@ const Head = ({title}) => {
     }
   `)
   return (
-    <Helmet title={`${title} | ${data.site.siteMetadata.title}`}>
+    <Helmet title={`${title} | ${data.site.siteMetadata.title}`} htmlAttributes={{ lang : 'en' }}>
       <meta name="Description" content="Gatsby framework fetching data from siteMetadata, .md files, and CMS"></meta>
     </Helmet>
   )
