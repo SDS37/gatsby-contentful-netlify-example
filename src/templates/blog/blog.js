@@ -41,6 +41,12 @@ export const query = graphql`
       body {
         json
       }
+      postImage {
+        file {
+          url
+        }
+        title
+      }
     }
   }
 `
@@ -57,14 +63,16 @@ const Blog = (props) => {
     }
   }
 
+  const postImage = props.data.contentfulBlogPost.postImage ?
+    <img src={props.data.contentfulBlogPost.postImage.file.url} alt={props.data.contentfulBlogPost.postImage.title} /> : '';
+
   return (
     <Layout>
       <Head title={props.data.contentfulBlogPost.title} />
       <h1>{props.data.contentfulBlogPost.title}</h1>
       <p>{props.data.contentfulBlogPost.publishedDate}</p>
-      <div className={blogStyles.imageContainer}>
-        {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
-      </div>
+      {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
+      {postImage}
     </Layout>
   )
 }
