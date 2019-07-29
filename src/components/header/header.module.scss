@@ -1,14 +1,13 @@
 
 .header {
-  padding: 1rem 0 3rem;
-  // temp
-  background: blue;
+  padding: 1rem;
+  background: #f4f4f4;
 }
 
 .title {
-  color: green;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-decoration: none;
+  color: #808080;
 }
 
 .nav-list {
@@ -19,16 +18,20 @@
 }
 
 .nav-item {
-  font-size: .9rem;
   margin-right: .5rem;
   text-decoration: none;
-  // temp
-  color: gray;
+  color: #a6a6a6;
   &:hover {
-    color: yellow
+    color: #8c8c8c
   }
 }
 
 .active-nav-item {
-  color: green;
+  color: #000000;
+}
+
+@media only screen and (max-width: 600px) { 
+  .title {
+    font-size: 1.8rem;
+  }
 }

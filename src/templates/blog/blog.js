@@ -3,8 +3,11 @@ import { graphql } from 'gatsby'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
 // components
-import Layout from '../components/layout/layout'
-import Head from '../components/head/head'
+import Layout from '../../components/layout/layout'
+import Head from '../../components/head/head'
+
+// styles
+import blogStyles from './blog.module.scss'
 
 // to use with .md files
 // export const query = graphql`
@@ -59,7 +62,7 @@ const Blog = (props) => {
       <Head title={props.data.contentfulBlogPost.title} />
       <h1>{props.data.contentfulBlogPost.title}</h1>
       <p>{props.data.contentfulBlogPost.publishedDate}</p>
-      <div className="max-width-class">
+      <div className={blogStyles.imageContainer}>
         {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
       </div>
     </Layout>

@@ -18,9 +18,9 @@ module.exports.onCreateNode = ({node, actions}) => {
 // https://www.gatsbyjs.org/docs/node-apis/#createPages
 module.exports.createPages = async ({graphql, actions}) => {
   const { createPage } = actions
-  const blogTemplate = path.resolve('./src/templates/blog.js')
+  const blogTemplate = path.resolve('./src/templates/blog/blog.js')
 
-  // to use with .md files
+  // Markdown (.md files) query
   // const response = await graphql(`
   //   query {
   //     allMarkdownRemark {
@@ -35,7 +35,7 @@ module.exports.createPages = async ({graphql, actions}) => {
   //   }
   // `)
 
-  // to use with Contentful
+  // Contentful query
   const response = await graphql(`
     query {
       allContentfulBlogPost {

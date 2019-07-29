@@ -9,8 +9,8 @@ const ContactPage = () => {
     <div>
       <Layout>
         <Head title="contact"/>
-        <h1>contact page</h1>
-        <p>twitter <a href="https://twitter.com" target="_blank">twitter</a></p>
+        <h1>Contact</h1>
+        Get in touch: <a href="https://se.linkedin.com/in/salvador-duenas-50a320a1" target="_blank">linkedin</a>
       </Layout>
     </div>
   )

@@ -1,16 +1,17 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 
-// styles
-import blogStyles from './blog.module.scss'
-
 // components
 import Layout from '../components/layout/layout'
 import Head from '../components/head/head'
 
+// styles
+import blogStyles from './styles/blog.module.scss'
+
+// fetching markdown (.md) files data from posts folder
+
 // const BlogPage = () => {
 
-//   // fetching markdown (.md) data from posts folder
 //   const data = useStaticQuery(graphql`
 //     query {
 //       allMarkdownRemark {
